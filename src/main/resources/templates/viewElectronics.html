@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.com">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Electronics Products</title>
+    <style>
+ 		
+ 		body{
+ 		background-color:#bda24f;
+ 		}
+ 		
+ 		.card{
+ 		height:470px;
+ 		}
+
+ 
+    </style>
+    
+    
+  </head>
+  
+  
+    <header>
+  	
+  	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand"  href="#"><img src="https://tse3.mm.bing.net/th?id=OIP.Qhi_A-CvFkjp1jMSwwOpRgHaHa&pid=Api&P=0&h=220" class="rounded-circle" height="70px" width="70px"> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" style ="color:white;" aria-current="page" th:href="@{/home}">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link active" style="color:white;" aria-current="page" th:href="@{/about}">About Us</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link active" style="color:white;" aria-current="page" th:href="@{/showreviews}">Review</a>
+        </li>
+        
+      </ul>
+        <li class="nav-item">
+          <a class="nav-link active" style="color:white;" aria-current="page" th:href="@{/visitprofile}"><i class="fa-solid fa-bars"></i></a>
+        </li>
+        
+        <li class="nav-item">
+        <button type="button" onclick="window.location.href='/logout'" class="btn btn-warning">LogOut</button>
+        </li>
+          
+      
+    </div>
+  </div>
+</nav>
+  </header>
+ 
+ 
+  
+  <body>
+  
+   <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
+  <div class="col">
+    <div class="card border-danger">
+      <img style="cursor:pointer;" onclick="window.location.href='/tvdata'" src="https://tse1.mm.bing.net/th?id=OIP.t6FQsL3ntKtlIvQK1VwhfgHaHa&pid=Api&P=0&h=220" height="300px" class="card-img-top rounded cursor-pointer" alt="Electronics_image">
+      <div class="card-body">
+    <h5 class="card-title">Television [LED/LCD]</h5>
+        <p class="card-text">Experience entertainment like never before with our range of LED and LCD televisions. Whether you're binge-watching your favorite series or hosting movie nights, enjoy crystal-clear picture quality, vibrant colors, and energy-efficient performance. Available in various screen sizes with smart features for seamless streaming and connectivity.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-danger">
+      <img  style="cursor:pointer;" onclick="window.location.href='/phonedata'" src="https://tse2.mm.bing.net/th?id=OIP.QupID-7-vL3DV2ldw7vWAgHaEK&pid=Api&P=0&h=220" height="320px" class="card-img-top rounded" alt="fashion">
+      <div class="card-body">
+        <h5 class="card-title">Mobile Phones</h5>
+        <p class="card-text">Stay connected in style with our latest collection of smartphones. From high-speed processors to brilliant displays and advanced cameras, our mobile phones combine performance and design to match your lifestyle. Choose from top brands with 4G/5G support, long-lasting batteries, and the latest Android and iOS features.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-danger">
+      <img style="cursor:pointer;" onclick="window.location.href='/headsetdata'" src="https://tse1.mm.bing.net/th?id=OIP.2SXwxQE6dgxLMibRA6t_rwHaF7&pid=Api&P=0&h=220" height="250px" class="card-img-top rounded" alt="HomeAndKitchen">
+      <div class="card-body">
+        <h5 class="card-title">Headset</h5>
+         <p class="card-text">Immerse yourself in superior sound with our stylish and comfortable headsets. Perfect for music lovers, gamers, and professionals, our range includes wired and wireless models with noise cancellation, crystal-clear microphones, and long battery life. Enjoy every beat and conversation, whether at home or on the go. </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-danger">
+      <img style="cursor:pointer;" onclick="window.location.href='/laptopdata'" src="https://tse3.mm.bing.net/th?id=OIP.bYWJ7uRMl9AyZCzcerYl-gHaHa&pid=Api&P=0&h=220" height="250px" class="card-img-top rounded" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Laptop</h5>
+         <p class="card-text">Power through your tasks with our versatile range of laptops. Whether you're working, studying, or gaming, our laptops deliver speed, storage, and stunning visuals. Choose from ultra-light models for portability or high-performance machines for demanding tasks – all from trusted global brands.</p>
+      </div>
+    </div>
+  </div>
+   <div class="col">
+    <div class="card border-danger">
+      <img style="cursor:pointer;"onclick="window.location.href='/homeappliancesdata'"  src="https://tse4.mm.bing.net/th?id=OIP.8PGHPwg90h-kPrqbGZUQzAHaHa&pid=Api&P=0&h=220" height="250px" class="card-img-top rounded" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Home Appliances</h5>
+         <p class="card-text">Make everyday life easier with our reliable and energy-efficient home appliances. From refrigerators and washing machines to microwaves and air conditioners, we offer smart solutions that blend technology with convenience. Upgrade your home with appliances that are built to last and designed to impress.</p>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <footer class="text-center text-lg-start mt-5 border-top" style="background-color:#232F3E">
+  <div class="container p-4 text-light">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">SwiftKart</h5>
+        <p>
+          Making the online shopping available all the time...
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Links</h5>
+        <ul class="list-unstyled mb-0 ">
+          <li><a th:href="@{/home}" class="text-light text-decoration-none">Home</a></li>
+          <li><a th:href="@{/about}" class="text-light text-decoration-none">About</a></li>
+          <li><a th:href="@{/userpanel}"  class="text-light text-decoration-none">Services</a></li>
+          <li><a th:href="@{/about}" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center p-3 bg-secondary text-white">
+    © 2025 SwiftKart
+  </div>
+</footer>
+
+
+    
+  </body>
+  
+  </html>

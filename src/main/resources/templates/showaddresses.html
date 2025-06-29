@@ -1,0 +1,127 @@
+
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.com">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <title>Show Addresses</title>
+    
+  </head>
+  
+  
+   <header>
+  	
+  	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand"  href="#"><img src="https://tse3.mm.bing.net/th?id=OIP.Qhi_A-CvFkjp1jMSwwOpRgHaHa&pid=Api&P=0&h=220" class="rounded-circle" height="70px" width="70px"> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" style ="color:white;" aria-current="page" th:href="@{/home}">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link active" style="color:white;" aria-current="page" th:href="@{/about}">About Us</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link active" style="color:white;" aria-current="page" th:href="@{/showreviews}">Review</a>
+        </li>
+        
+      </ul>
+        <li class="nav-item">
+          <a class="nav-link active" style="color:white;" aria-current="page" th:href="@{/visitprofile}"><i class="fa-solid fa-bars"></i></a>
+        </li>
+        
+        <li class="nav-item">
+        <button type="button" onclick="window.location.href='/logout'" class="btn btn-warning">LogOut</button>
+        </li>
+          
+      
+    </div>
+  </div>
+</nav>
+  </header>
+ 
+  <br><br>
+  <body>
+	<div class="container-fluid">
+	
+	<a th:href="@{/newadd}" style="text-decoration:none;"><i class="fa-solid fa-square-plus"></i>&nbsp; Add New Address</a>
+  
+    </div>
+	<br>
+    
+    <form th:each="p1:${list}">
+    <div style="border:1px solid black; height:250px;" class="p-4">
+	
+	<div th:if="${message}">
+    <p style="color: red; font-weight: bold;" th:text="${message}"></p>
+  </div>
+  
+    <!-- 
+  <div class="mb-3">
+    <label class="form-label">PinCode :</label>
+    <input type="number" readonly="readonly" th:value="${p1.pincode}">
+  </div>
+  
+  <div class="mb-3">
+    <label class="form-label">Lane No :</label>
+    <input type="number" readonly="readonly" th:value="${p1.laneno}">
+  </div>
+  
+  <div class="mb-3">
+    <label class="form-label">Colony Name :</label>
+    <input type="text" readonly="readonly" th:value="${p1.colName}">
+  </div>
+  
+  <div class="mb-3">
+    <label class="form-label">City :</label>
+    <input type="text" readonly="readonly" th:value="${p1.city}">
+  </div>
+  
+    </div>
+     -->
+ 
+ 	<div class="mb-3">
+    <label class="form-label fw-bold">PinCode :</label>
+    <span th:text="${p1.pincode}"> </span>
+  </div>
+  
+  <div class="mb-3">
+    <label class="form-label fw-bold">Lane No :</label>
+    <span th:text="${p1.laneno}"> </span>
+  </div>
+  
+  <div class="mb-3">
+    <label class="form-label fw-bold">Colony Name :</label>
+    <span th:text="${p1.colName}"> </span>
+  </div>
+  
+  <div class="mb-3">
+    <label class="form-label fw-bold">City :</label>
+    <span th:text="${p1.city}"> </span>
+  </div>
+  
+  <div class="mb-3">
+  <a th:href="@{/editadd/{pin}(pin=${p1.pincode})}"><i class="fa-solid fa-pen"></i></a> Edit &nbsp; &nbsp;
+  <a th:href="@{/removeadd/{pin}(pin=${p1.pincode})}"><i class="fa-solid fa-trash"></i></a>Remove
+  </div>
+  
+  </div>
+ 
+ </form>
+	
+    
+  </body>
+  
+  </html>

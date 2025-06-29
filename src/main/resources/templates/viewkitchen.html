@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.com">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Home And Kitchen Products</title>
+    <style>
+ 		
+ 		body{
+ 		background-color:#bda24f;
+}
+
+ 
+    </style>
+    
+    
+  </head>
+  
+  
+    <header>
+  	
+  	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand"  href="#"><img src="https://tse3.mm.bing.net/th?id=OIP.Qhi_A-CvFkjp1jMSwwOpRgHaHa&pid=Api&P=0&h=220" class="rounded-circle" height="70px" width="70px"> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" style ="color:white;" aria-current="page" th:href="@{/home}">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link active" style="color:white;" aria-current="page" th:href="@{/about}">About Us</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link active" style="color:white;" aria-current="page" th:href="@{/showreviews}">Review</a>
+        </li>
+        
+      </ul>
+        <li class="nav-item">
+          <a class="nav-link active" style="color:white;" aria-current="page" th:href="@{/visitprofile}"><i class="fa-solid fa-bars"></i></a>
+        </li>
+        
+        <li class="nav-item">
+        <button type="button" onclick="window.location.href='/logout'" class="btn btn-warning">LogOut</button>
+        </li>
+          
+      
+    </div>
+  </div>
+</nav>
+  </header>
+ 
+ 
+  
+  <body>
+  <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
+  <div class="col">
+    <div class="card border-danger">
+      <img style="cursor:pointer;" onclick="window.location.href='/furnituredata'" src="https://tse2.mm.bing.net/th?id=OIP.fe7aehKwU7hl99N0GTu86QHaDs&pid=Api&P=0&h=220" height="300px" class="card-img-top rounded cursor-pointer" alt="Electronics_image">
+      <div class="card-body">
+    <h5 class="card-title">Furniture</h5>
+        <p class="card-text">Transform your living spaces with our premium furniture collection designed for comfort, durability, and style. From modern sofas and cozy recliners to elegant dining tables and space-saving storage units, we have something for every room and every taste. Crafted from high-quality materials, our furniture adds a touch of sophistication to your home while ensuring functionality for everyday living.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-danger">
+      <img style="cursor:pointer;" onclick="window.location.href='/diningdata'" src="https://tse4.mm.bing.net/th?id=OIP.hghmtwonk88zesampStRTgHaHa&pid=Api&P=0&h=220" height="320px" class="card-img-top rounded" alt="fashion">
+      <div class="card-body">
+        <h5 class="card-title">Kitchen And Dining</h5>
+        <p class="card-text">Elevate your culinary experience with our curated selection of kitchen and dining essentials. Whether you're a home cook or a hosting enthusiast, find everything from sleek cookware and durable utensils to stylish dinnerware and elegant serveware.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-danger">
+      <img style="cursor:pointer;" onclick="window.location.href='/cleaningdata'" src="http://www.starplusservices.com/upload/images/Janitorial-Cleaning-Supplies.jpg" height="250px" class="card-img-top rounded" alt="HomeAndKitchen">
+      <div class="card-body">
+        <h5 class="card-title">Cleaning Supplies</h5>
+        <p class="card-text">Keep your home spotless and fresh with our reliable range of cleaning supplies. Discover high-performance tools and eco-friendly products designed to tackle dirt, dust, and germs with ease. From all-purpose cleaners to brooms, mops, and disinfectants, our cleaning essentials ensure your living space stays hygienic, organized, and inviting—day after day.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  
+     
+  <footer class="text-center text-lg-start mt-5 border-top" style="background-color:#232F3E">
+  <div class="container p-4 text-light">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">SwiftKart</h5>
+        <p>
+          Making the online shopping available all the time...
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Links</h5>
+        <ul class="list-unstyled mb-0 ">
+          <li><a th:href="@{/home}" class="text-light text-decoration-none">Home</a></li>
+          <li><a th:href="@{/about}" class="text-light text-decoration-none">About</a></li>
+          <li><a th:href="@{/userpanel}"  class="text-light text-decoration-none">Services</a></li>
+          <li><a th:href="@{/about}" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center p-3 bg-secondary text-white">
+    © 2025 SwiftKart
+  </div>
+</footer>
+
+
+    
+  </body>
+  
+  </html>

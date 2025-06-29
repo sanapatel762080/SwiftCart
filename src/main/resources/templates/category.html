@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.com">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Categories</title>
+    
+    
+   
+  </head>
+  
+  
+  <header>
+  	
+  	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand"  href="#"><img src="https://tse3.mm.bing.net/th?id=OIP.Qhi_A-CvFkjp1jMSwwOpRgHaHa&pid=Api&P=0&h=220" class="rounded-circle" height="70px" width="70px"> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" style ="color:white;" aria-current="page" href="#">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link active" style="color:white;" aria-current="page" href="#">About Us</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link active" style="color:white;" aria-current="page" href="#">Review</a>
+        </li>
+        
+      </ul>
+       <li class="nav-item">
+        <button type="button" onclick="window.location.href='/logout'" class="btn btn-warning">LogOut</button>
+        </li>
+      
+    </div>
+  </div>
+</nav>
+  </header>
+  <body>
+   
+   <center>
+   <img src="https://tse2.mm.bing.net/th?id=OIP.9-ghSh-PNxysc7oTRHp-VwHaEm&pid=Api&P=0&h=220" class="mt-4  border-dark">
+   
+   <br>
+   
+   <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
+  <div class="col">
+    <div class="card border-danger">
+      <img style="cursor:pointer;" onclick="window.location.href='/gotoaddingelectronic'" src="https://tse2.mm.bing.net/th?id=OIP.Kk0zMUE1l81Ef2QTF16BrgHaCd&pid=Api&P=0&h=220" class="card-img-top rounded cursor-pointer" alt="Electronics_image">
+      <div class="card-body">
+        <h5 class="card-title">Electronics</h5>
+        <p class="card-text">Explore our extensive range of cutting-edge electronics designed to keep you connected, productive, and entertained. From smartphones, laptops, and smartwatches to audio gear and accessories, we bring you the latest technology from top brands—all in one place.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-danger">
+      <img style="cursor:pointer;" onclick="window.location.href='/gotoaddingfashion'" src="https://tse1.mm.bing.net/th?id=OIP.O_bRCmxZL3gumG6ei-vAzwAAAA&pid=Api&P=0&h=220" height="270px"  class="card-img-top rounded" alt="fashion">
+      <div class="card-body">
+        <h5 class="card-title">Men's / Women's Fashion</h5>
+        <p class="card-text">Upgrade your wardrobe with our stylish collection for Women and men. From casual wear and formal attire to sportswear and accessories, we offer the latest trends and timeless pieces for every occasion.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-danger">
+      <img style="cursor:pointer;" onclick="window.location.href='/gotoaddingkitchen'" src="https://tse4.mm.bing.net/th?id=OIP.X1XWpYx-Cj5MZCtjxEIuqAHaHa&pid=Api&P=0&h=220" height="250px" class="card-img-top rounded" alt="HomeAndKitchen">
+      <div class="card-body">
+        <h5 class="card-title">Home And Kitchen</h5>
+        <p class="card-text">Transform your living space with our curated selection of home and kitchen essentials. From cozy décor and furniture to cookware and storage solutions, we make it easy to create a beautiful, functional home that reflects your style.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-danger">
+      <img style="cursor:pointer;" onclick="window.location.href='/gotoaddingappliances'" src="https://tse4.mm.bing.net/th?id=OIP.l29Ju9-pj9ThXA8U6s_NTwHaEK&pid=Api&P=0&h=220" height="250px"  class="card-img-top rounded" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">TVs and Appliances</h5>
+        <p class="card-text">Experience the future of comfort and entertainment with our premium TVs and home appliances. Discover smart TVs, air conditioners, refrigerators, washing machines, and more from top-rated brands—all built for efficiency, performance, and style.</p>
+      </div>
+    </div>
+  </div>
+</div>
+   </center>
+   
+  <footer class="text-center text-lg-start mt-5 border-top" style="background-color:#232F3E">
+  <div class="container p-4 text-light">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">SwiftKart</h5>
+        <p>
+          Making the online shopping available all the time...
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Links</h5>
+        <ul class="list-unstyled mb-0 ">
+          <li><a href="#!" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="#!" class="text-light text-decoration-none">About</a></li>
+          <li><a href="#!" class="text-light text-decoration-none">Services</a></li>
+          <li><a href="#!" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center p-3 bg-secondary text-white">
+    © 2025 SwiftKart
+  </div>
+</footer>
+
+</footer>
+   
+	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
